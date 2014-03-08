@@ -1,0 +1,14 @@
+Revision history for Perl module Net::Bamboo
+
+0.02 2014-03-
+    - Not all prereqs were listed, switched to [AutoPrereqs] in dist.ini
+    - Specified min version of Perl 5.8.3
+    - Added abstract section to pod
+    - Added COPYRIGHT AND LICENSE section to the pod
+    - Added [GithubMeta] to dist.ini, so github repo listed in metadata
+    - Listed github repo (as a link to the repo) in the pod
+    - Added this Changes file
+
+0.01 2011-11-20
+    - First release to CPAN
+

@@ -2,6 +2,7 @@ package Net::Bamboo;
 
 # ABSTRACT: OO Interface for the REST services provided by Atlassian Bamboo
 
+use 5.008003;
 use Moose;
 use MooseX::Types::URI qw(Uri FileUri DataUri);
 
@@ -139,6 +140,10 @@ sub refresh
 
 __END__
 
+=head1 NAME
+
+Net::Bamboo - interface for the REST services provided by Atlassian Bamboo
+
 =head1 SYNOPSIS
 
  use Net::Bamboo;
@@ -215,9 +220,20 @@ it's likely to be used much less often.
 This is a rough first cut.  Pull requests against my github repository
 are more than welcome.
 
+=head1 REPOSITORY
+
+L<https://github.com/tripside/net-bamboo>
+
 =head1 AUTHOR
 
-Mike Eldridge <diz@cpan.org>
+Mike Eldridge E<lt>diz@cpan.orgE<gt>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2011 by Mike Eldridge E<lt>diz@cpan.orgE<gt>
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
 
