@@ -2,6 +2,7 @@ package Net::Bamboo;
 
 # ABSTRACT: OO Interface for the REST services provided by Atlassian Bamboo
 
+use 5.008003;
 use Moose;
 use MooseX::Types::URI qw(Uri FileUri DataUri);
 

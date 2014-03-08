@@ -1,6 +1,7 @@
 Revision history for Perl module Net::Bamboo
 
 0.02 2014-03-
+    - Specified min version of Perl 5.8.3
     - Added abstract section to pod
     - Added this Changes file
 
