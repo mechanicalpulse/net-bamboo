@@ -220,6 +220,10 @@ it's likely to be used much less often.
 This is a rough first cut.  Pull requests against my github repository
 are more than welcome.
 
+=head1 REPOSITORY
+
+L<https://github.com/tripside/net-bamboo>
+
 =head1 AUTHOR
 
 Mike Eldridge E<lt>diz@cpan.orgE<gt>
