@@ -139,6 +139,10 @@ sub refresh
 
 __END__
 
+=head1 NAME
+
+Net::Bamboo - interface for the REST services provided by Atlassian Bamboo
+
 =head1 SYNOPSIS
 
  use Net::Bamboo;
