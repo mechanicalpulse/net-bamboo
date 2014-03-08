@@ -1,6 +1,7 @@
 Revision history for Perl module Net::Bamboo
 
 0.02 2014-03-
+    - Not all prereqs were listed, switched to [AutoPrereqs] in dist.ini
     - Specified min version of Perl 5.8.3
     - Added abstract section to pod
     - Added COPYRIGHT AND LICENSE section to the pod
