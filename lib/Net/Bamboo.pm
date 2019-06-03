@@ -151,6 +151,7 @@ __END__
  $bamboo->hostname('bamboo.domain.com'); # hostname of bamboo server
  $bamboo->username('myuser');            # bamboo username
  $bamboo->password('mypass');            # bamboo password
+ $bamboo->scheme('https');               # if server requires https connections
  $bamboo->debug($bool);                  # debug mode (dump HTTP/XML)
 
  # projects
