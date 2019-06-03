@@ -17,7 +17,7 @@ has hostname	=> (isa => 'Str',	is => 'rw');
 has username	=> (isa => 'Str',	is => 'rw');
 has password	=> (isa => 'Str',	is => 'rw');
 has realm		=> (isa => 'Str',	is => 'rw', default => 'protected-area');
-has debug		=> (isa => 'Bool',	is => 'ro', default => 0);
+has debug		=> (isa => 'Bool',	is => 'rw', default => 0);
 
 has _ua =>
 	isa			=> 'LWP::UserAgent',
