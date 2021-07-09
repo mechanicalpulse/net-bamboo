@@ -18,6 +18,7 @@ has username	=> (isa => 'Str',	is => 'rw');
 has password	=> (isa => 'Str',	is => 'rw');
 has realm		=> (isa => 'Str',	is => 'rw', default => 'protected-area');
 has debug		=> (isa => 'Bool',	is => 'ro', default => 0);
+has scheme		=> (isa => 'Str',	is => 'rw', default => 'http');
 
 has _ua =>
 	isa			=> 'LWP::UserAgent',
@@ -62,7 +63,7 @@ sub _build__uri
 
 	my $uri = new URI;
 
-	$uri->scheme('http');
+	$uri->scheme($self->scheme);
 	$uri->host($self->hostname);
 	$uri->path('/rest/api/latest/');
 	$uri->query_form({ os_authType => 'basic' });
@@ -150,6 +151,7 @@ __END__
  $bamboo->hostname('bamboo.domain.com'); # hostname of bamboo server
  $bamboo->username('myuser');            # bamboo username
  $bamboo->password('mypass');            # bamboo password
+ $bamboo->scheme('https');               # if server requires https connections
  $bamboo->debug($bool);                  # debug mode (dump HTTP/XML)
 
  # projects
